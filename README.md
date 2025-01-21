@@ -1,72 +1,53 @@
 # Bone-Fracture-Detection
-This project employs convolutional neural networks (CNNs) to classify fractures in the elbow, hand, and shoulder using the MURA dataset. By automating fracture detection with high accuracy, it streamlines musculoskeletal radiograph analysis, supporting efficient and reliable medical diagnosis.
-Table of Contents
-Features
-Technologies Used
-Installation
-Usage
-Dataset
-Results
-Contribution
-License
-Features
+Bone Fracture Detection using deep learning. This project employs Convolutional Neural Networks (CNNs) to classify fractures in the elbow, hand, and shoulder. Trained on the MURA dataset, it aims to automate fracture detection with high accuracy, leveraging musculoskeletal radiograph data.
+
+## Table of Contents
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Dataset](#dataset)
+- [Results](#results)
+- [Contribution](#contribution)
+- [License](#license)
+
+## Features
 Automated detection of bone fractures.
-Classification of fractures across multiple bone types: elbow, hand, and shoulder.
-Visualizes model performance metrics for deeper insights.
-Technologies Used
-Python: Core programming language.
-TensorFlow/Keras: For deep learning and model development.
-OpenCV: For image preprocessing and manipulation.
-Matplotlib & Seaborn: For data visualization and performance metrics.
-Installation
-Clone the repository:
-bash
-Copy
-Edit
-git clone https://github.com/Bilal976r/bone-fracture-detection.git  
-cd bone-fracture-detection  
-Install dependencies:
-bash
-Copy
-Edit
-pip install -r requirements.txt  
-Usage
-Prepare the dataset:
-Place the MURA dataset in the directory specified in the code.
+Classifies fractures across multiple bone types: elbow, hand, and shoulder.
+Visualizes model performance metrics.
 
-Train the model:
-Run the training scripts to start training:
+## Technologies Used
+Python
+TensorFlow/Keras for deep learning
+OpenCV for image processing
+Matplotlib and Seaborn for visualizations
 
-bash
-Copy
-Edit
-python training_parts.py  
-python training_fracture.py  
-Evaluate the model:
-Assess the model’s accuracy with:
+## Installation
+1. **Clone the repository**:
+    git clone https://github.com/Bilal976r/bone-fracture-detection.git
+    cd bone-fracture-detection
+2. **Install dependencies**:
+    pip install -r requirements.txt
 
-bash
-Copy
-Edit
-python prediction_test.py  
-python predictions.py  
-Launch the application:
-Start the GUI for fracture detection:
+## Usage
+1. **Prepare the dataset**: Place the MURA dataset in the appropriate directory as specified in the code.
+2. **Train the model**: Run the training script to start training the model:
+    python training_parts.py
+    python training_fracture
+3. **Evaluate the model**: Use the evaluation script to assess the model's accuracy:
+    python prediction_test.py
+    python predictions.py
+4. **Main File**: Use this to start the application.
+   python mainGUI.py
 
-bash
-Copy
-Edit
-python mainGUI.py  
-Dataset
-This project uses the MURA dataset, a comprehensive collection of musculoskeletal radiographs. It must be downloaded separately from Stanford ML Group's website.
+## Dataset
+The project uses the MURA dataset, a large collection of musculoskeletal radiographs. You need to download it separately from [Stanford ML Group's website](https://stanfordmlgroup.github.io/competitions/mura/).
 
-Results
-Performance metrics such as accuracy and confusion matrices are generated post-training.
-Visualizations can be customized using provided scripts for detailed analysis.
-Contribution
-Contributions are highly encouraged!
+## Results
+The model's accuracy, confusion matrix, and other performance metrics will be displayed after training and evaluation. You can customize the visualization scripts for more in-depth analysis.
 
-Open issues for bugs or suggestions.
-Submit feature requests or make pull requests to enhance the project.
-License
-This project is open-source and distributed under the MIT License.
+## Contribution
+Contributions are welcome! Feel free to open issues, submit feature requests, or make pull requests.
+
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
